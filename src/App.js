@@ -36,6 +36,9 @@ function App() {
         {/* card */}
         <div className="d-flex justify-between">
           <div className="card">
+            <div className="favorite">
+              <img src="/heart-0.svg" alt="Unlike" />
+            </div>
             <img
               width={133}
               height={112}
@@ -54,6 +57,9 @@ function App() {
             </div>
           </div>
           <div className="card">
+            <div className="favorite">
+              <img src="/heart-0.svg" alt="Unlike" />
+            </div>
             <img
               width={133}
               height={112}
@@ -72,6 +78,9 @@ function App() {
             </div>
           </div>
           <div className="card">
+            <div className="favorite">
+              <img src="/heart-0.svg" alt="Unlike" />
+            </div>
             <img
               width={133}
               height={112}
@@ -90,6 +99,9 @@ function App() {
             </div>
           </div>
           <div className="card">
+            <div className="favorite">
+              <img src="/heart-0.svg" alt="Unlike" />
+            </div>
             <img
               width={133}
               height={112}
