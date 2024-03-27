@@ -3,6 +3,31 @@ import "./App.scss";
 function App() {
   return (
     <div className="wrapper clear">
+      {/* cart(карзина) */}
+      <div className="overlay">
+        <div className="drawer">
+          <h3>Корзина</h3>
+          <div className="cart-item d-flex align-center">
+            <img
+              className="mr-20"
+              width={70}
+              height={70}
+              src="/img/Sneakers/1.jpg"
+              alt="sneakers"
+            />
+            <div className="mr-30">
+              <p className="mb-5">Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <b>12 999 руб.</b>
+            </div>
+            <img
+              className="remove-btn"
+              src="/img/remove-btn.svg"
+              alt="remove"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* header */}
       <header className="d-flex justify-between align-center p-40">
         <div className="d-flex align-center">
@@ -27,6 +52,7 @@ function App() {
       <div className="content p-40  ">
         <div className="d-flex  mb-40 justify-between">
           <h1 className="all-sneakers">Все кроссовки</h1>
+          {/* search */}
           <div className="search d-flex">
             <img src="/img/search.svg" alt="" />
             <input placeholder="Поиск..." />
@@ -35,6 +61,7 @@ function App() {
 
         {/* card */}
         <div className="d-flex justify-between">
+          {/* 1 */}
           <div className="card">
             <div className="favorite">
               <img src="/heart-0.svg" alt="Unlike" />
@@ -56,6 +83,7 @@ function App() {
               </button>
             </div>
           </div>
+          {/* 2  */}
           <div className="card">
             <div className="favorite">
               <img src="/heart-0.svg" alt="Unlike" />
@@ -77,6 +105,7 @@ function App() {
               </button>
             </div>
           </div>
+          {/* 3 */}
           <div className="card">
             <div className="favorite">
               <img src="/heart-0.svg" alt="Unlike" />
@@ -98,6 +127,7 @@ function App() {
               </button>
             </div>
           </div>
+          {/* 4  */}
           <div className="card">
             <div className="favorite">
               <img src="/heart-0.svg" alt="Unlike" />
