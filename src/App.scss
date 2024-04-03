@@ -97,6 +97,8 @@ header {
 
 .drawer {
   // right block
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 385px;
   height: 100%;
@@ -108,10 +110,17 @@ header {
     margin: 0;
     font-weight: 700;
     font-size: 24px;
+    img {
+      cursor: pointer;
+    }
   }
 }
 
 .cart-item {
+  padding: 5px;
+  border: 1px solid #aca8a8;
+  border-radius: 15px;
+  overflow: hidden;
   p {
     font-size: 16px;
   }
@@ -125,5 +134,67 @@ header {
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.cartTotalBlock {
+  li {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    width: 325px;
+  }
+  div {
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px dashed #dfdfdf;
+    position: relative;
+    top: -2px;
+    margin: 0 7px;
+  }
+}
+
+.items {
+  flex: 1;
+  overflow: auto;
+}
+.greenButton {
+  position: relative;
+  img {
+    position: absolute;
+    right: 30px;
+    top: 21px;
+    transition: transform 0.2s ease-in-out;
+  }
+  &:hover {
+    img {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.greenButton {
+  width: 100%;
+  /* Rectangle 25 */
+
+  width: 325px;
+  height: 55px;
+  cursor: pointer;
+  background: #9dd558;
+  border-radius: 18px;
+  /* Оформить заказ */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  transition: background 0.2s ease-in-out;
+  &:hover {
+    background: lighten(#9dd558, 5%);
+  }
+  &:active {
+    background: darken(#9dd558, 5%);
   }
 }
