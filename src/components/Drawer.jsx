@@ -48,10 +48,11 @@ const Drawer = (props) => {
               <span>Налог 5 %:</span>
               <div></div>
               <b>1000 руб.</b>
+              bla
             </li>
           </ul>
           <button className="greenButton">
-            Оформить заказ <img src="/img/arrow.svg" alt="" />
+            Оформить заказы <img src="/img/arrow.svg" alt="" />
           </button>
         </div>
       </div>
